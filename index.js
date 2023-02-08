@@ -10,4 +10,6 @@ app.get('/', (request, response) => {
     response.sendFile(`${appRoot.path}\\pages\\index.html`)
 });
 
-app.listen(3300, () => console.log("Servidor UP!"));
+var port = server.listen(process.env.PORT || 3000);
+
+app.listen(port, () => console.log("Servidor UP!"));
