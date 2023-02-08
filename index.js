@@ -7,7 +7,7 @@ const appRoot = require('app-root-path');
 app.use(express.static(appRoot.path));
 
 app.get('/', (request, response) => {
-    response.sendFile(`${appRoot.path}\\pages\\index.html`)
+    response.sendFile(`${appRoot.path}/pages/index.html`)
 });
 
 
